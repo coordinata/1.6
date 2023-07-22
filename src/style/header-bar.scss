@@ -1,0 +1,102 @@
+.header-bar {
+  display: flex;
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  padding: 24px 16px;
+  background-color: #fff;
+  border-bottom: 1px solid #d9fff5;
+  padding: 16px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  @media (min-width: 1120px) {
+    display: none;
+  }
+
+  &__divider {
+    display: flex;
+    align-items: center;
+  }
+
+  &__button {
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  &__button-repair-text {
+    &::after {
+      @media (min-width: 1120px) {
+        content: "";
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background-image: url("../img/repair.svg");
+        background-repeat: no-repeat;
+        margin-right: 32px;
+        vertical-align: middle;
+        margin-left: 8px;
+      }
+    }
+  }
+
+  &__button-checkstatus-text {
+    &::after {
+      @media (min-width: 1120px) {
+        content: "";
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background-image: url("../img/checkstatus.svg");
+        background-repeat: no-repeat;
+        vertical-align: middle;
+        margin-left: 8px;
+      }
+    }
+  }
+
+  &__divider-left {
+    @media (min-width: 768px) {
+      order: -1;
+    }
+  }
+
+  &__burger-button {
+    @media (min-width: 768px) {
+      order: -2;
+    }
+  }
+
+  &__button-repair {
+    @media (min-width: 768px) {
+      order: 1;
+    }
+  }
+
+  &__button-checkstatus {
+    @media (min-width: 768px) {
+      order: 1;
+    }
+  }
+
+  &--show-hide {
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+}
+
+.header-bar-left {
+  display: flex;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.header-bar-right {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+}

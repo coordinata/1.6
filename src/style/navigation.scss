@@ -1,0 +1,35 @@
+.navigation {
+  &__list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    @media (min-width: 1120px) {
+      overflow: hidden;
+      flex-wrap: wrap;
+      overflow-x: visible;
+      overflow-y: visible;
+    }
+  }
+  &__item {
+    font-size: 16px;
+    letter-spacing: -0.2px;
+    line-height: 24px;
+    white-space: nowrap;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 9px;
+    padding-left: 16px;
+    margin-left: 16px;
+    .navigation__link {
+      color: #7e7e82;
+      text-decoration: none;
+    }
+    &--active {
+      border: solid 2px #b8ffec;
+      background-color: #ffffff;
+      border-radius: 6px;
+    }
+  }
+}

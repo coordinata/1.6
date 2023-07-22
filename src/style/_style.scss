@@ -1,0 +1,25 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "TT Lakes", sans-serif;
+  background-color: #f8f8f8;
+}
+
+h1 {
+  display: flex;
+  text-align: left;
+  margin: 0;
+  font-size: 28px;
+  letter-spacing: -0.6px;
+  font-weight: 700px;
+  font-family: "TT Lakes", sans-serif;
+}

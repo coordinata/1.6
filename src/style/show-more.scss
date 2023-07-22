@@ -1,0 +1,15 @@
+.show-more {
+  &__icon {
+    ::before {
+      content: "";
+      display: inline-block;
+      width: 18px;
+      height: 28px;
+      background-image: url("../img/expand.svg");
+      margin-left: 24px;
+      margin-right: 16px;
+      margin-right: 16px;
+      background-size: cover;
+    }
+  }
+}
