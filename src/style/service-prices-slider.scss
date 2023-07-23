@@ -1,0 +1,84 @@
+.service-prices-slider {
+  position: relative;
+  padding-bottom: 3.1rem;
+  margin-bottom: 1.6rem;
+
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: 5;
+    top: -0.4rem;
+    right: -1px;
+    display: block;
+    width: 2.4rem;
+    height: 21.1rem;
+    background: linear-gradient(
+      270deg,
+      #f8f8f8 16.84%,
+      rgba(248, 248, 248, 0.0001) 100%
+    );
+    @media (min-width: $tablet) {
+      display: none;
+    }
+  }
+
+  &__head {
+    display: none;
+    padding: 1.6rem;
+    @media (min-width: $tablet) {
+      display: flex;
+    }
+
+    h3 {
+      margin: 0;
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: #7e7e82;
+    }
+  }
+
+  &__name {
+    width: 52.5%;
+  }
+
+  &__price {
+    width: 15%;
+  }
+
+  &__time {
+    width: 32.5%;
+  }
+
+  &__wrapper {
+    @media (min-width: $tablet) {
+      flex-wrap: wrap;
+      width: auto;
+      height: auto;
+      padding: 2.4rem 1.6rem;
+      background-color: $white;
+      border-radius: 6px;
+    }
+  }
+
+  &__slide {
+    &:first-child {
+      @media (min-width: $tablet) {
+        .service-prices-slide {
+          padding-top: 0;
+        }
+      }
+    }
+    &:last-child {
+      @media (min-width: $tablet) {
+        .service-prices-slide {
+          padding-bottom: 0;
+          border-bottom: 0;
+        }
+      }
+    }
+  }
+
+  &__pagination {
+    bottom: 0 !important;
+  }
+}

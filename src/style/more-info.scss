@@ -1,0 +1,37 @@
+.more-info {
+  position: relative;
+  padding: 0 0 0 3.2rem;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  text-decoration: none;
+  background: transparent;
+  border: 0;
+  transition: color $transition;
+  cursor: pointer;
+  outline: none;
+  color: $black;
+
+  &:hover,
+  &:focus {
+    color: $green;
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: center / contain no-repeat url('../img/more-info-icon.svg');
+  }
+
+  &--active {
+    &::before {
+      transform: rotate(180deg);
+    }
+  }
+}

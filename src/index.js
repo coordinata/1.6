@@ -83,3 +83,95 @@ function changeCSS() {
     } else {}
 
 }
+
+document.addEventListener('DOMContentLoaded', () => { // Equipment Repair
+    if (window.innerWidth < 768) {
+        new Swiper('.equipment-repair-slider', {
+            slidesPerView: 1.27,
+            spaceBetween: 16,
+            pagination: {
+                el: '.swiper-pagination'
+            }
+        })
+    }
+
+    const equipmentRepairSlider = document.querySelector(
+        '.equipment-repair-slider'
+    )
+    const equipmentRepairMoreInfo = document.querySelector(
+        '.equipment-repair__more-info'
+    )
+
+    equipmentRepairMoreInfo.addEventListener('click', () => {
+        equipmentRepairSlider.classList.toggle('equipment-repair-slider--full')
+        equipmentRepairMoreInfo.classList.toggle('more-info--active')
+        toggleMoreInfoText(equipmentRepairMoreInfo, 'Показать все', 'Скрыть')
+    })
+
+    // Service Prices
+    if (window.innerWidth < 768) {
+        new Swiper('.service-prices-slider', {
+            slidesPerView: 1.15,
+            spaceBetween: 16,
+            pagination: {
+                el: '.swiper-pagination'
+            }
+        })
+    }
+
+    // Popup
+    const buttonPopupFeedback = document.querySelector('.js-popup-feedback')
+    const buttonPopupRequestСall = document.querySelector(
+        '.js-popup-request-call'
+    )
+
+    const popupFeedback = document.querySelector('#popup-feedback')
+    const popupPopupRequestСall = document.querySelector('#popup-request-call')
+
+    const popupFeedbackContent = popupFeedback.querySelector('.popup__content')
+    const popupRequestСallContent =
+        popupPopupRequestСall.querySelector('.popup__content')
+
+    const popupClose = document.querySelectorAll('.js-popup-close')
+
+    buttonPopupFeedback.addEventListener('click', (evt) => {
+        popupFeedback.classList.add('popup--active')
+        page.classList.add('page--no-scroll')
+        evt.stopPropagation()
+    })
+    buttonPopupRequestСall.addEventListener('click', (evt) => {
+        popupPopupRequestСall.classList.add('popup--active')
+        page.classList.add('page--no-scroll')
+        evt.stopPropagation()
+    })
+
+    popupFeedbackContent.addEventListener('click', (evt) => {
+        evt.stopPropagation()
+    })
+    popupRequestСallContent.addEventListener('click', (evt) => {
+        evt.stopPropagation()
+    })
+
+    popupClose.forEach((button) => {
+        button.addEventListener('click', () => {
+            popupFeedback.classList.remove('popup--active')
+            popupPopupRequestСall.classList.remove('popup--active')
+            page.classList.remove('page--no-scroll')
+        })
+    })
+
+    page.addEventListener('click', () => {
+        popupFeedback.classList.remove('popup--active')
+        popupPopupRequestСall.classList.remove('popup--active')
+        page.classList.remove('page--no-scroll')
+    })
+
+    // Secondary Functions
+    function toggleMoreInfoText(moreInfoButton, textClose, textOpen) {
+        if (moreInfoButton.textContent === textClose) {
+            moreInfoButton.textContent = textOpen
+        } else {
+            moreInfoButton.textContent = textClose
+        }
+    }
+})

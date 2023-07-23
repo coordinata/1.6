@@ -1,0 +1,54 @@
+.form {
+  &__item {
+    margin-bottom: 1.6rem;
+  }
+
+  &__label {
+    display: block;
+  }
+
+  &__input {
+    width: 100%;
+    max-width: 100%;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    padding: 1.1rem 1.6rem;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+
+    &::placeholder {
+      color: #b5b6bc;
+    }
+  }
+
+  &__textarea {
+    width: 100%;
+    max-width: 100%;
+    min-height: 12rem;
+    resize: none;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    padding: 1.1rem 1.6rem;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+
+    &::placeholder {
+      color: #b5b6bc;
+    }
+  }
+
+  &__privacy-policy {
+    font-size: 1.4rem;
+    color: $grey;
+    margin-bottom: 1.6rem;
+
+    a {
+      color: $red;
+      text-decoration: none;
+    }
+  }
+
+  &__button {
+    margin-left: auto;
+  }
+}

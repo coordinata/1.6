@@ -1,0 +1,12 @@
+.block {
+  padding: 0 0 2.4rem 0;
+  @media (min-width: $desktop) {
+    padding: 0 0 5rem 0;
+  }
+  &__block-title {
+    margin-bottom: 1.6rem;
+    @media (min-width: $tablet) {
+      margin-bottom: 2.4rem;
+    }
+  }
+}

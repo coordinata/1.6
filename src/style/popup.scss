@@ -1,0 +1,62 @@
+.popup {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+    width: 100vw;
+    height: 100vh;
+    background-color: $white;
+    opacity: 0.95;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 10;
+    width: 320px;
+    height: 100%;
+    background-color: $white;
+    padding: 2.4rem 0 3.2rem;
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02),
+      16px 0px 52px rgba(14, 24, 80, 0.2);
+    overflow-y: auto;
+
+    @media (min-width: $tablet) {
+      width: 44rem;
+      overflow-y: unset;
+    }
+  }
+
+  // &__container {
+  // }
+
+  &__close {
+    margin-bottom: 3.2rem;
+    @media (min-width: $tablet) {
+      position: absolute;
+      left: -7.2rem;
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    margin-bottom: 2.4rem;
+  }
+
+  // &__form {
+  // }
+
+  &--active {
+    display: block;
+  }
+}

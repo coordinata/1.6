@@ -1,0 +1,8 @@
+.equipment-repair {
+  &__more-info {
+    display: none;
+    @media (min-width: $tablet) {
+      display: block;
+    }
+  }
+}

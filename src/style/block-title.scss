@@ -1,0 +1,15 @@
+.block-title {
+  margin: 0 calc(var(--gap) * -1);
+  padding: 1.6rem var(--gap);
+  color: $grey;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #f8f8f8 0%, #ffffff 98.61%);
+  border-top: 1px solid $lightgreen;
+  @media (min-width: 1441px) {
+    margin: 0;
+  }
+}

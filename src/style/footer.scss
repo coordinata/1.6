@@ -1,0 +1,46 @@
+.footer {
+  padding: 1.6rem 0;
+  text-align: center;
+  border-top: 1px solid $lightgreen;
+
+  @media (min-width: $tablet) {
+    padding: 3.2rem 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 32rem;
+  }
+
+  // &__row {
+  // }
+
+  // &__column {
+  // }
+
+  a {
+    &:hover {
+      color: $black;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    text-decoration: none;
+    color: $grey;
+
+    &--first {
+      @media (min-width: $tablet) {
+        text-align-last: left;
+      }
+    }
+
+    // &--second {
+    // }
+
+    &--third {
+      @media (min-width: $tablet) {
+        text-align-last: right;
+      }
+    }
+  }
+}

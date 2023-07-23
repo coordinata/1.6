@@ -1,0 +1,60 @@
+.service-prices-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.6rem;
+  width: 100%;
+  min-height: 20.4rem;
+  font-size: 1.4rem;
+  background-color: $white;
+  border-radius: 6px;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    align-items: center;
+    padding: 1.6rem 0;
+    min-height: unset;
+    border-radius: 0;
+    border-bottom: 1px solid #eaeaea;
+  }
+
+  h4 {
+    margin: 0 0 0.4rem 0;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: $grey;
+    @media (min-width: $tablet) {
+      display: none;
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+
+  &__name {
+    margin-bottom: 1.6rem;
+    @media (min-width: $tablet) {
+      margin-bottom: 0;
+      width: 52.5%;
+    }
+  }
+
+  &__price {
+    margin-bottom: 1.6rem;
+    @media (min-width: $tablet) {
+      margin-bottom: 0;
+      width: 15%;
+    }
+  }
+
+  &__time {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    @media (min-width: $tablet) {
+      width: 32.5%;
+      align-items: center;
+    }
+  }
+}
