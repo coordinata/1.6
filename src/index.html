@@ -13,12 +13,46 @@
   <title>Web Core 1.6</title>
 </head>
 
-<body>
+<body class="page">
+  <header class="header-bar">
+    <div class="header-bar-left">
+      <button class="header-bar__burger-button header-bar__button js-sidebar-open">
+        <img src="img\burger.svg">
+      </button>
+      <div class="header-bar__logo">
+        <img src="img\logo.svg" alt="Логотип">
+      </div>
+      <div class="header-bar__divider header-bar__divider-left">
+        <img src="img\divider.svg">
+      </div>
+    </div>
+    <div class="header-bar-right">
+      <button class="header-bar__button header-bar__button--show-hide">
+        <img src="img\call.svg">
+      </button>
+      <button class="header-bar__button header-bar__button--show-hide">
+        <img src="img\chat.svg">
+      </button>
+      <button class="header-bar__button header-bar__button--show-hide">
+        <img src="img\profile.svg">
+      </button>
+      <div class="header-bar__divider header-bar__button--show-hide">
+        <img src="img\divider.svg">
+      </div>
+      <button class="header-bar__button header-bar__button-repair">
+        <img src="img\repair.svg">
+      </button>
+      <button class="header-bar__button header-bar__button-checkstatus">
+        <img src="img\checkstatus.svg">
+    </div>
+    </button>
+  </header>
+
   <div class="side-navigation">
     <div class="side-navigation__content">
       <div class="side-navigation__header">
         <div class="side-navigation__header-start">
-          <button class="side-navigation__burger side-navigation__button side-navigation__close">
+          <button class="side-navigation__burger side-navigation__button side-navigation__close js-sidebar-close">
             <img src="img\close.svg">
           </button>
           <div class="side-navigation__logo">
@@ -42,8 +76,10 @@
         </ul>
       </div>
       <div class="side-navigation__info">
-        <button class="side-navigation__button side-navigation__call"><img src="img\call.svg"></button>
-        <button class="side-navigation__button side-navigation__chat"><img src="img\chat.svg"></button>
+        <button class="side-navigation__button side-navigation__call js-popup-request-call"><img
+            src="img\call.svg"></button>
+        <button class="side-navigation__button side-navigation__chat js-popup-feedback"><img
+            src="img\chat.svg"></button>
         <button class="side-navigation__button side-navigation__profile"><img src="img\profile.svg"></button>
       </div>
       <div class="side-navigation__contacts">
@@ -62,39 +98,6 @@
   <main class="main">
     <div class="container">
       <div class="info-block">
-        <header class="header-bar">
-          <div class="header-bar-left">
-            <button class="header-bar__burger-button header-bar__button">
-              <img src="img\burger.svg">
-            </button>
-            <div class="header-bar__logo">
-              <img src="img\logo.svg" alt="Логотип">
-            </div>
-            <div class="header-bar__divider header-bar__divider-left">
-              <img src="img\divider.svg">
-            </div>
-          </div>
-          <div class="header-bar-right">
-            <button class="header-bar__button header-bar__button--show-hide">
-              <img src="img\call.svg">
-            </button>
-            <button class="header-bar__button header-bar__button--show-hide">
-              <img src="img\chat.svg">
-            </button>
-            <button class="header-bar__button header-bar__button--show-hide">
-              <img src="img\profile.svg">
-            </button>
-            <div class="header-bar__divider header-bar__button--show-hide">
-              <img src="img\divider.svg">
-            </div>
-            <button class="header-bar__button header-bar__button-repair">
-              <img src="img\repair.svg">
-            </button>
-            <button class="header-bar__button header-bar__button-checkstatus">
-              <img src="img\checkstatus.svg">
-          </div>
-          </button>
-        </header>
 
         <div class="content">
           <section class="content__header">
@@ -125,9 +128,10 @@
             <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете
               отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
             <p class="content__text--show-hide">Мы успешно работаем с 1992 года и заслужили репутацию
-              надежного партнера<p class="content__text-element--show-hide">, что подтверждает большое количество
-                постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
-                очередь, советуют нас родным и близким.</p>
+              надежного партнера
+            <p class="content__text-element--show-hide">, что подтверждает большое количество
+              постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+              очередь, советуют нас родным и близким.</p>
             </p>
             <button class="content__button-show-more show-more__icon">
               Читать далее
@@ -390,6 +394,76 @@
       </section>
     </div>
   </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__row row row--three-col row--y-gap">
+        <div class="footer__column column">
+          <p class="footer__text footer__text--first">© 2019 CPS <br> Разработано командой Apesong </p>
+        </div>
+        <div class="footer__column column">
+          <a class="footer__text footer__text--second" href="#">Политика конфиденциальности</a>
+        </div>
+        <div class="footer__column column">
+          <p class="footer__text footer__text--third">Информация, размещенная на данной странице, не является публичной
+            офертой</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="popup-feedback" class="popup">
+    <div class="popup__content">
+      <div class="container popup__container">
+        <button class="popup__close icon icon--close js-popup-close"></button>
+        <h3 class="popup__title page-title">Обратная связь</h3>
+        <form class="popup__form form" action="/" method="post">
+          <div class="form__item">
+            <label class="form__label">
+              <input class="form__input" type="text" placeholder="Имя">
+            </label>
+          </div>
+          <div class="form__item">
+            <label class="form__label">
+              <input class="form__input" type="tel" placeholder="Телефон">
+            </label>
+          </div>
+          <div class="form__item">
+            <label class="form__label">
+              <input class="form__input" type="email" placeholder="Электронная почта">
+            </label>
+          </div>
+          <div class="form__item">
+            <textarea class="form__textarea" placeholder="Сообщение"></textarea>
+          </div>
+          <div class="form__privacy-policy">Нажимая "отправить", вы даете согласие на <a href="#">обработку персональных
+              данных</a> и
+            соглашаетесь с нашей <a href="#">политикой конфиденциальности</a></div>
+          <button class="form__button button" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div id="popup-request-call" class="popup">
+    <div class="popup__content">
+      <div class="container popup__container">
+        <button class="popup__close icon icon--close js-popup-close"></button>
+        <h3 class="popup__title page-title">Заказать звонок</h3>
+        <form class="popup__form form" action="/" method="post">
+          <div class="form__item">
+            <label class="form__label">
+              <input class="form__input" type="tel" placeholder="Телефон">
+            </label>
+          </div>
+          <div class="form__privacy-policy">Нажимая "отправить", вы даете согласие на <a href="#">обработку персональных
+              данных</a> и
+            соглашаетесь с нашей <a href="#">политикой конфиденциальности</a></div>
+          <button class="form__button button" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </body>

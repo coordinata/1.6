@@ -5,7 +5,7 @@
   @media (min-width: $tablet) {
     padding-bottom: 0;
     margin-bottom: 2.4rem;
-    height: 160px;
+    height: 180px;
 
     &--full {
       height: 100%;
@@ -13,7 +13,7 @@
   }
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     z-index: 5;
     top: -0.4rem;

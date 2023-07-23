@@ -19,18 +19,14 @@
     letter-spacing: -0.2px;
     color: $black;
     text-decoration: none;
-    &:hover,
-    &:focus {
-      color: $red;
-    }
     &::after {
-      content: '';
+      content: "";
       display: inline-block;
       vertical-align: middle;
       width: 2.4rem;
       height: 2.8rem;
       background: center / contain no-repeat
-        url('../img/service-prices-link-arrow.svg');
+        url("../img/service-prices-link-arrow.svg");
     }
   }
 }
