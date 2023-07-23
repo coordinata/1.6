@@ -23,3 +23,14 @@ h1 {
   font-weight: 700px;
   font-family: "TT Lakes", sans-serif;
 }
+
+.main {
+  @media (min-width: 1120px) {
+    margin-left: 320px;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1120px;
+}
