@@ -1,0 +1,351 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+
+@font-face{font-family:"TT Lakes";font-style:normal;font-weight:400;src:local("TT Lakes"),url(fonts/TTLakes-Regular.woff) format("woff"),url(assets/TTLakes-Regular.ttf) format("truetype"),url(assets/TTLakes-Regular.eot) format("embedded-opentype")}@font-face{font-family:"TT Lakes";font-style:normal;font-weight:500;src:local("TT Lakes"),url(fonts/TTLakes-Medium.woff) format("woff"),url(assets/TTLakes-Medium.ttf) format("truetype"),url(assets/TTLakes-Medium.eot) format("embedded-opentype")}@font-face{font-family:"TT Lakes";font-style:normal;font-weight:700;src:local("TT Lakes"),url(fonts/TTLakes-Bold.woff) format("woff"),url(assets/TTLakes-Bold.ttf) format("truetype"),url(assets/TTLakes-Bold.eot) format("embedded-opentype")}html{box-sizing:border-box}*,*::after,*::before{box-sizing:inherit}body{margin:0;font-family:"TT Lakes",sans-serif;background-color:#f8f8f8}h1{display:flex;text-align:left;margin:0;font-size:28px;letter-spacing:-0.6px;font-weight:700px;font-family:"TT Lakes",sans-serif}.container{margin:0 auto;max-width:1120px}.content{display:flex;flex-direction:column;width:100%;min-width:320px}.content__title{display:flex;margin:0;padding-top:24px;padding-left:0}.content__title::before{content:" ";background-color:#41f6d7;border-top-right-radius:4px;border-bottom-right-radius:4px;margin-right:12px;width:4px;height:40px}.content__wrapper{margin:0}.content__text{line-height:18px;letter-spacing:.2px;font-size:14px}.content__button-show-more{display:flex;padding:0;border:none;background:none;cursor:pointer;align-items:center}.content__button-show-more::before{margin-left:0 !important}.content__button-show-more-text{color:#1b1c21;white-space:nowrap;font-size:16px;line-height:24px;display:flex;align-items:center}.content__img{width:100%}.content__img-mobile{max-width:100%}.content_header{display:flex;align-items:flex-end}.header-bar{display:flex;width:100%;min-width:320px;height:auto;display:flex;align-items:center;padding:24px 16px;background-color:#fff;border-bottom:1px solid #d9fff5;padding:16px;box-sizing:border-box;justify-content:space-between}.header-bar__divider{display:flex;align-items:center}.header-bar__button{padding:0;border:none;background:none;cursor:pointer}.header-bar-left{display:flex;justify-content:flex-start;gap:16px}.header-bar-right{display:flex;justify-content:flex-end;gap:16px}.info-block{margin-left:auto;margin-right:auto}.navigation__list{display:flex;list-style-type:none;padding:0;overflow-x:scroll;overflow-y:hidden}.navigation__item{font-size:16px;letter-spacing:-0.2px;line-height:24px;white-space:nowrap;padding-top:8px;padding-bottom:8px;padding-right:9px;padding-left:16px;margin-left:16px}.navigation__item .navigation__link{color:#7e7e82;-webkit-text-decoration:none;text-decoration:none}.navigation__item--active{border:solid 2px #b8ffec;background-color:#fff;border-radius:6px}.show-more__icon ::before{content:"";display:inline-block;width:18px;height:28px;background-image:url(assets/expand.svg);margin-left:24px;margin-right:16px;margin-right:16px;background-size:cover}.side-navigation{z-index:100;display:none}.side-navigation__content{overflow-y:auto;width:320px;height:100%;position:fixed;left:0;top:0;z-index:15;box-shadow:-2px 0 4px 0 rgba(69,79,126,.02),16px 0 52px 0 rgba(14,24,80,.2);background-color:#fff}.side-navigation--active{display:block}.side-navigation::before{content:"";display:block;position:absolute;top:0;right:0;bottom:0;left:0;z-index:5;width:100vw;height:100%;background-color:#fff;opacity:.95}.side-navigation__header{display:flex;width:100%;padding:0;margin:0}.side-navigation__button{padding:0;border:none;background:none;cursor:pointer}.side-navigation__burger{margin-right:16px;margin-top:23px}.side-navigation__logo{margin-top:19px}.side-navigation__search{margin-top:23px}.side-navigation__menu{margin:0;padding:0;list-style:none;margin-top:24px;margin-left:24px}.side-navigation__menu li{margin-bottom:24px}.side-navigation__menu-link{color:#1b1c21;font-size:16px;font-style:normal;font-weight:500;line-height:24px;letter-spacing:-0.2px;-webkit-text-decoration:none;text-decoration:none}.side-navigation__menu-link:hover{color:#7e7e82}.side-navigation__menu-link::before{position:absolute;left:0;content:url(assets/highlight.svg);background-color:#41f6d7;border-top-right-radius:4px;border-bottom-right-radius:4px;margin-right:12px;width:4px;height:32px;display:none}.side-navigation__menu-link:hover::before{display:block}.side-navigation__call{margin-left:24px;margin-right:16px}.side-navigation__chat{margin-right:16px}.side-navigation__info{margin-bottom:16px}.side-navigation__contacts{display:inline-block;margin-left:24px;margin-bottom:40px}.side-navigation__contacts-mail{margin-bottom:12px;font-weight:500;line-height:24px;letter-spacing:-0.2px}.side-navigation__contacts-phone{font-size:24px;font-style:normal;font-weight:700;line-height:32px;letter-spacing:-0.6px}.side-navigation__lang{margin-left:24px;font-weight:500;line-height:24px;letter-spacing:-0.2px;margin-bottom:32px;word-spacing:6px}.side-navigation__lang-element:hover{color:#7e7e82;cursor:pointer}.side-navigation__header{display:flex;justify-content:space-between;padding:0 22px}.side-navigation__header-start{display:flex;align-items:center}.brand-block__title-wrapper{border-top:1px solid #d9fff5}.brand-block{padding-bottom:38px;margin-left:auto;margin-right:auto}.brand-block__title-text{font-family:"TT Lakes",sans-serif;line-height:24px;font-size:16px;font-weight:400;padding:0;margin:0;color:#7e7e82}.wrapper_swiper__block{min-width:320px}.image-slider__slide{background-color:#fff}.image-slider__image{text-align:center}.image-slider__image img{max-width:100%}.brand-block__title-wrapper{text-transform:uppercase;padding:15px 16px;background:linear-gradient(270deg, #fff 0%, #f8f8f8 100%);width:auto}.swiper-slide-brand{box-sizing:border-box;display:flex;position:relative;justify-content:space-between;align-items:center;width:240px;height:72px;padding:12px 16px;border-radius:6px;border:1px solid #eaeaea;margin-top:16px}.swiper-pagination{position:relative;margin-top:16px}.swiper-pagination-bullet{background-color:#b5b6bc;width:12px;height:12px}.swiper-container{overflow:hidden}.brand-block__show-more-button{display:flex;padding:0;border:none;background:none;cursor:pointer;align-items:center;font-family:"TT Lakes",sans-serif;color:#1b1c21;white-space:nowrap;font-size:16px;line-height:24px;font-weight:500;font-style:normal}.show-more__icon::before{content:"";display:inline-block;width:18px;height:28px;background-image:url(assets/expand.svg);margin-right:16px;margin-right:16px;background-size:cover;-webkit-transform:var(--transform-rotate);transform:var(--transform-rotate)}.image-slider__slide{justify-content:space-between !important}.image-slider__slide{display:flex}:root{--gap: 1.6rem}html{box-sizing:border-box;font-size:10px}*,*:before,*:after{box-sizing:inherit}body{margin:0;font-family:"TT Lakes",sans-serif;font-size:1.4rem;line-height:1.3;color:#1b1c21;min-width:320px;position:relative;overflow-x:hidden;background-color:#f8f8f8;letter-spacing:.2px}button{font-family:"TT Lakes",sans-serif}a{transition:color .3s ease}.container{padding:0 1.6rem;padding:0 var(--gap);margin:0 auto;max-width:1120px}.row{display:flex;flex-wrap:wrap;margin:0 calc(1.6rem*-0.5);margin:0 calc(var(--gap)*-0.5)}.row--y-gap{margin-top:calc(1.6rem*-1);margin-top:calc(var(--gap)*-1)}.row--y-gap .column{margin-top:1.6rem;margin-top:var(--gap)}.column{width:100%;padding:0 calc(1.6rem*.5);padding:0 calc(var(--gap)*.5)}.icon{position:relative;display:inline-block;padding:0;margin:0;width:4rem;height:4rem;background-color:#ff3e79;border-radius:50%;border:0;cursor:pointer;transition:opacity .3s ease}.icon:hover,.icon:focus{opacity:.85}.icon::before{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%, -50%);transform:translate(-50%, -50%);content:"";display:block}.icon--burger::before{width:1.8rem;height:1.6rem;background:center/contain no-repeat url(assets/burger-icon.svg)}.icon--repair::before{width:2rem;height:2rem;background:center/contain no-repeat url(assets/repair-icon.svg)}.icon--checkstatus::before{width:1.6rem;height:2rem;background:center/contain no-repeat url(assets/checkstatus-icon.svg)}.icon--call::before{width:1.8rem;height:1.8rem;background:center/contain no-repeat url(assets/call-icon.svg)}.icon--chat::before{width:2rem;height:2rem;background:center/contain no-repeat url(assets/chat-icon.svg)}.icon--profile::before{width:2rem;height:1.8rem;background:center/contain no-repeat url(assets/profile-icon.svg)}.icon--dropdown::before{width:.8rem;height:1.2rem;background:center/contain no-repeat url(assets/dropdown-icon.svg)}.icon--close::before{width:1.6rem;height:1.6rem;background:center/contain no-repeat url(assets/close-icon.svg)}.icon--search::before{width:1.6rem;height:1.6rem;background:center/contain no-repeat url(assets/search-icon.svg)}.icon--theme--border{background-color:rgba(0,0,0,0);border:2px solid #ff3e79}.button{display:flex;align-items:center;padding:.4rem 1.1rem .4rem 1.9rem;font-size:1.2rem;line-height:2.4rem;font-weight:700;color:#fff;text-align:center;letter-spacing:-0.15px;text-transform:uppercase;-webkit-text-decoration:none;text-decoration:none;background-color:#ff3e79;border:0;border-radius:1.6rem;cursor:pointer;transition:opacity .3s ease}.button:hover,.button:focus{opacity:.85}.button::after{content:"";display:inline-block;vertical-align:middle;width:24px;height:24px;background:center/contain no-repeat url(assets/button-icon.svg)}.text-icon{display:flex;align-items:center;padding:0;font-size:1.6rem;font-weight:500;background:rgba(0,0,0,0);border:0;cursor:pointer;transition:color .3s ease;outline:none}.text-icon:hover{color:#ff3e79}.text-icon:focus{color:#ff3e79}.text-icon__text{display:none;margin-right:.8rem}.text-icon__icon{flex-shrink:0}.page-title{position:relative;margin:0;font-weight:700;font-size:2.8rem;line-height:1.4;letter-spacing:-0.6px}.page-title::before{content:"";position:absolute;top:0;left:calc(1.6rem*-1);left:calc(var(--gap)*-1);display:block;width:.4rem;height:4rem;background-color:#41f6d7;border-top-right-radius:4px;border-bottom-right-radius:4px}.more-info{position:relative;padding:0 0 0 3.2rem;font-size:1.6rem;line-height:2.4rem;font-weight:500;letter-spacing:-0.2px;-webkit-text-decoration:none;text-decoration:none;background:rgba(0,0,0,0);border:0;transition:color .3s ease;cursor:pointer;outline:none;color:#1b1c21}.more-info::before{position:absolute;top:0;left:0;content:"";display:block;width:24px;height:24px;background:center/contain no-repeat url(assets/more-info-icon.svg)}.more-info--active::before{-webkit-transform:rotate(180deg);transform:rotate(180deg)}.block-title{margin:0 calc(1.6rem*-1);margin:0 calc(var(--gap)*-1);padding:1.6rem 1.6rem;padding:1.6rem var(--gap);color:#7e7e82;font-size:1.6rem;font-weight:400;line-height:1.5;letter-spacing:-0.2px;text-transform:uppercase;background:linear-gradient(90deg, #f8f8f8 0%, #ffffff 98.61%);border-top:1px solid #d9fff5}.block{padding:0 0 2.4rem 0}.block__block-title{margin-bottom:1.6rem}.swiper{width:100%;height:100%}.swiper-wrapper{box-sizing:border-box}.swiper-slide{display:flex;justify-content:center;align-items:center}.swiper-pagination{line-height:1}.swiper-pagination-bullet{width:1.2rem;height:1.2rem;background:#ddd;opacity:1}.swiper-pagination-bullet.swiper-pagination-bullet-active{background:#b5b6bc}.equipment-repair__more-info{display:none}.equipment-repair-slider{position:relative;padding-bottom:3.1rem}.equipment-repair-slider::after{content:"";position:absolute;z-index:5;top:-0.4rem;right:-1px;display:block;width:2.4rem;height:16.8rem;background:linear-gradient(270deg, #f8f8f8 16.84%, rgba(248, 248, 248, 0.0001) 100%)}.equipment-repair-slider__pagination{bottom:0 !important}.equipment-repair-slide{display:flex;flex-direction:column;justify-content:space-between;min-height:160px;width:100%;padding:1.6rem;background:#fff;border:1px solid #eaeaea;border-radius:6px}.equipment-repair-slide__title{margin:0 0 1.6rem 0;font-size:1.6rem;letter-spacing:-0.2px;font-weight:400}.equipment-repair-slide__icon{align-self:flex-end}.service-prices{padding-bottom:0}.service-prices__text{margin-bottom:1.6rem;max-width:42.5rem}.service-prices__text p{margin-top:0}.service-prices__text>*:last-child{margin-bottom:0}.service-prices__link{font-size:1.6rem;line-height:2.4rem;font-weight:500;letter-spacing:-0.2px;color:#1b1c21;-webkit-text-decoration:none;text-decoration:none}.service-prices__link::after{content:"";display:inline-block;vertical-align:middle;width:2.4rem;height:2.8rem;background:center/contain no-repeat url(assets/service-prices-link-arrow.svg)}.service-prices-slider{position:relative;padding-bottom:3.1rem;margin-bottom:1.6rem}.service-prices-slider::after{content:"";position:absolute;z-index:5;top:-0.4rem;right:-1px;display:block;width:2.4rem;height:21.1rem;background:linear-gradient(270deg, #f8f8f8 16.84%, rgba(248, 248, 248, 0.0001) 100%)}.service-prices-slider__head{display:none;padding:1.6rem}.service-prices-slider__head h3{margin:0;font-size:1.4rem;font-weight:500;color:#7e7e82}.service-prices-slider__name{width:52.5%}.service-prices-slider__price{width:15%}.service-prices-slider__time{width:32.5%}.service-prices-slider__pagination{bottom:0 !important}.service-prices-slide{display:flex;flex-direction:column;justify-content:space-between;padding:1.6rem;width:100%;min-height:20.4rem;font-size:1.4rem;background-color:#fff;border-radius:6px}.service-prices-slide h4{margin:0 0 .4rem 0;font-size:1.4rem;font-weight:500;color:#7e7e82}.service-prices-slide p{margin:0}.service-prices-slide__name{margin-bottom:1.6rem}.service-prices-slide__price{margin-bottom:1.6rem}.service-prices-slide__time{display:flex;align-items:flex-end;justify-content:space-between}.footer{padding:1.6rem 0;text-align:center;border-top:1px solid #d9fff5}.footer a:hover{color:#1b1c21}.footer__text{margin:0;-webkit-text-decoration:none;text-decoration:none;color:#7e7e82}.popup{z-index:100;position:fixed;top:0;right:0;bottom:0;display:none}.popup::before{content:"";display:block;position:absolute;top:0;right:0;bottom:0;z-index:5;width:100vw;height:100vh;background-color:#fff;opacity:.95}.popup__content{position:relative;z-index:10;width:320px;height:100%;background-color:#fff;padding:2.4rem 0 3.2rem;box-shadow:-2px 0px 4px rgba(69,79,126,.02),16px 0px 52px rgba(14,24,80,.2);overflow-y:auto}.popup__close{margin-bottom:3.2rem}.popup__title{margin-bottom:2.4rem}.popup--active{display:block}.form__item{margin-bottom:1.6rem}.form__label{display:block}.form__input{width:100%;max-width:100%;font-size:1.6rem;line-height:2.4rem;padding:1.1rem 1.6rem;border:1px solid #eaeaea;border-radius:8px}.form__input::-webkit-input-placeholder{color:#b5b6bc}.form__input::placeholder{color:#b5b6bc}.form__textarea{width:100%;max-width:100%;min-height:12rem;resize:none;font-size:1.6rem;line-height:2.4rem;padding:1.1rem 1.6rem;border:1px solid #eaeaea;border-radius:8px}.form__textarea::-webkit-input-placeholder{color:#b5b6bc}.form__textarea::placeholder{color:#b5b6bc}.form__privacy-policy{font-size:1.4rem;color:#7e7e82;margin-bottom:1.6rem}.form__privacy-policy a{color:#ff3e79;-webkit-text-decoration:none;text-decoration:none}.form__button{margin-left:auto}@media (min-width: 768px){.content__text--show-hide{display:inline}.content__text-element--show-hide{display:none}.content__button-pc{display:none}.content__wrapper-img-mobile{display:none}.content__img{border-radius:6px;max-width:425px;margin-top:14px;margin-bottom:26px;margin-left:10px}.content__wrapper-img{float:right}.header-bar__divider-left{order:-1}.header-bar__burger-button{order:-2}.header-bar__button-repair{order:1}.header-bar__button-checkstatus{order:1}.side-navigation__menu li{margin-bottom:32px}.side-navigation__menu{margin-bottom:268px;margin-top:50px}.image-slider__wrapper{display:grid;grid-template-columns:repeat(3, 1fr);grid-column-gap:24px;-webkit-column-gap:24px;column-gap:24px;grid-row-gap:16px;row-gap:16px;margin:24px 0}.swiper-slide-brand{padding:16px;margin:0;width:100%}.swiper-container{overflow:visible;margin-left:0}.brand-block__title-wrapper{padding-left:24px}.brand-block{padding-bottom:34px}:root{--gap: 2.4rem}.row--two-col .column{width:50%}.row--three-col .column{width:33.33%}.block__block-title{margin-bottom:2.4rem}.equipment-repair__more-info{display:block}.equipment-repair-slider{padding-bottom:0;margin-bottom:2.4rem;height:180px}.equipment-repair-slider--full{height:100%}.equipment-repair-slider::after{display:none}.equipment-repair-slider__wrapper{flex-wrap:wrap;width:auto;height:auto;margin:0 calc(1.6rem*-0.5);margin:0 calc(var(--gap)*-0.5);margin-top:-1.6rem}.equipment-repair-slider__slide{width:33.33%;margin-top:1.6rem;padding:0 calc(1.6rem*.5);padding:0 calc(var(--gap)*.5)}.service-prices-slider::after{display:none}.service-prices-slider__head{display:flex}.service-prices-slider__wrapper{flex-wrap:wrap;width:auto;height:auto;padding:2.4rem 1.6rem;background-color:#fff;border-radius:6px}.service-prices-slider__slide:first-child .service-prices-slide{padding-top:0}.service-prices-slider__slide:last-child .service-prices-slide{padding-bottom:0;border-bottom:0}.service-prices-slide{flex-direction:row;align-items:center;padding:1.6rem 0;min-height:0;min-height:initial;border-radius:0;border-bottom:1px solid #eaeaea}.service-prices-slide h4{display:none}.service-prices-slide__name{margin-bottom:0;width:52.5%}.service-prices-slide__price{margin-bottom:0;width:15%}.service-prices-slide__time{width:32.5%;align-items:center}.footer{padding:3.2rem 0}.footer__text--first{text-align-last:left}.footer__text--third{text-align-last:right}.popup__content{width:44rem;overflow-y:visible;overflow-y:initial}.popup__close{position:absolute;left:-7.2rem;margin-bottom:0}}@media (min-width: 1120px){.main{margin-left:320px}.content__title{padding-top:42px;display:flex;flex-direction:row}.content__button-pc{display:flex;margin-left:auto;margin-right:35px;align-items:center;color:#1b1c21;cursor:pointer;font-weight:500;line-height:24px;letter-spacing:-0.2px}.content__img{min-width:530px;width:auto;height:auto;margin-left:36px}.content__wrapper-img-mobile{display:none}.content__text-element--show-hide{display:inline}.header-bar{display:none}.header-bar__button-repair-text::after{content:"";display:inline-block;width:40px;height:40px;background-image:url(assets/repair.svg);background-repeat:no-repeat;margin-right:32px;vertical-align:middle;margin-left:8px}.header-bar__button-checkstatus-text::after{content:"";display:inline-block;width:40px;height:40px;background-image:url(assets/checkstatus.svg);background-repeat:no-repeat;vertical-align:middle;margin-left:8px}.navigation__list{overflow:hidden;flex-wrap:wrap;overflow-x:visible;overflow-y:visible}.side-navigation{display:block;box-shadow:none}.side-navigation::before{display:none}.side-navigation__close{display:none}.image-slider__wrapper{display:grid;grid-template-columns:repeat(4, 1fr);grid-row-end:none;grid-column-gap:32px;-webkit-column-gap:32px;column-gap:32px;grid-row-gap:16px;row-gap:16px;margin:32px 0}.swiper-slide-brand:nth-last-child(-n+3){display:none}.swiper-slide-brand{padding:16px;margin:0;width:100%}.swiper-container{overflow:visible}.brand-block__title-wrapper{padding-left:32px}.brand-block{padding-bottom:34px}:root{--gap: 3.2rem}.text-icon__text{display:block}.block{padding:0 0 5rem 0}.equipment-repair-slider__slide{width:25%}.footer{margin-left:32rem}}@media (min-width: 1441px){.block-title{margin:0 0 3.2rem 0}}@media (max-width: 768px){.content__text--show-hide{display:none}.content__text-element--show-hide{display:none}.content__button-pc{display:none}.content__wrapper-img-mobile{display:flex;margin:0;justify-content:center;align-items:center;margin-top:15px;width:100%}.content__img{display:none}.header-bar__button--show-hide{display:none}.brand-block__show-more{display:none}}@media (min-width: 768px)and (max-width: 1120px){.swiper-slide-brand:nth-last-child(-n+5){display:none}}
