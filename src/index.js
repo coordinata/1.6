@@ -1,26 +1,9 @@
 import "./index.html";
 import "./index.scss";
-
-const swiperBrand = new Swiper(".image-slider", {
-  direction: "horizontal",
-  loop: "true",
-  slidesPerView: "auto",
-  spaceBetween: 16,
-
-  breakpoints: {
-    768: {
-      enabled: false,
-    },
-  },
-
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
+import "./modules/sliders.js";
 
 const toggleButton = document.querySelector(".brand-block__show-more-button");
-let flase_or_true = true;
+let isHidden = true;
 const element = document.getElementById("element"); // Замените 'yourElementId' на идентификатор вашего элемента
 const height = element.offsetHeight;
 const brandShowMore = document.querySelector(".brand-block__show-more-button");
@@ -34,7 +17,7 @@ function changeCSS() {
     if (window.innerWidth > 1200) {
       const mediaQuery = window.matchMedia("(min-width: 1120px)");
       const swiperSlides = document.querySelectorAll(".swiper-slide-brand");
-      if (flase_or_true) {
+      if (isHidden) {
         if (mediaQuery.matches) {
           for (let i = 0; i < swiperSlides.length; i++) {
             swiperSlides[i].style.display = "flex";
@@ -43,7 +26,7 @@ function changeCSS() {
               "--transform-rotate",
               "rotate(180deg)"
             );
-            flase_or_true = false;
+            isHidden = false;
           }
         }
       } else {
@@ -56,14 +39,14 @@ function changeCSS() {
               "--transform-rotate",
               "rotate(0deg)"
             );
-            flase_or_true = true;
+            isHidden = true;
           }
         }
       }
     } else if (window.innerWidth < 1200 && window.innerWidth >= 768) {
       const mediaQuery = window.matchMedia("(min-width: 768px)");
       const swiperSlides = document.querySelectorAll(".swiper-slide-brand");
-      if (flase_or_true) {
+      if (isHidden) {
         if (mediaQuery.matches) {
           for (let i = 0; i < swiperSlides.length; i++) {
             swiperSlides[i].style.display = "flex";
@@ -72,7 +55,7 @@ function changeCSS() {
               "--transform-rotate",
               "rotate(180deg)"
             );
-            flase_or_true = false;
+            isHidden = false;
           }
         }
       } else {
@@ -85,14 +68,12 @@ function changeCSS() {
               "--transform-rotate",
               "rotate(0deg)"
             );
-            flase_or_true = true;
+            isHidden = true;
           }
         }
       }
-    } else {
-    }
-  } else {
-  }
+    } else {}
+  } else {}
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -121,41 +102,6 @@ document.addEventListener("DOMContentLoaded", () => {
   page.addEventListener("click", () => {
     sidebar.classList.remove("side-navigation--active");
   });
-
-  // Equipment Repair
-  if (window.innerWidth < 768) {
-    new Swiper(".equipment-repair-slider", {
-      slidesPerView: 1.27,
-      spaceBetween: 16,
-      pagination: {
-        el: ".swiper-pagination",
-      },
-    });
-  }
-
-  const equipmentRepairSlider = document.querySelector(
-    ".equipment-repair-slider"
-  );
-  const equipmentRepairMoreInfo = document.querySelector(
-    ".equipment-repair__more-info"
-  );
-
-  equipmentRepairMoreInfo.addEventListener("click", () => {
-    equipmentRepairSlider.classList.toggle("equipment-repair-slider--full");
-    equipmentRepairMoreInfo.classList.toggle("more-info--active");
-    toggleMoreInfoText(equipmentRepairMoreInfo, "Показать все", "Скрыть");
-  });
-
-  // Service Prices
-  if (window.innerWidth < 768) {
-    new Swiper(".service-prices-slider", {
-      slidesPerView: 1.15,
-      spaceBetween: 16,
-      pagination: {
-        el: ".swiper-pagination",
-      },
-    });
-  }
 
   // Popup
   const buttonPopupFeedback = document.querySelector(".js-popup-feedback");

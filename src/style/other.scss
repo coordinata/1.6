@@ -39,6 +39,7 @@
   height: 100%;
   background-color: #fff;
   opacity: 0.95;
+
   @media (min-width: 1120px) {
     display: none;
   }
@@ -229,7 +230,7 @@
 
 .brand-block__title-wrapper {
   text-transform: uppercase;
-  padding: 15px 16px;
+  padding: 15px 0;
   background: linear-gradient(270deg, #fff 0%, #f8f8f8 100%);
   width: auto;
 }
@@ -299,9 +300,6 @@
 }
 
 @media (min-width: 768px) {
-  .brand-block__title-wrapper {
-    padding-left: 24px;
-  }
 
   .brand-block {
     padding-bottom: 34px;
@@ -365,9 +363,6 @@
 }
 
 @media (min-width: 1120px) {
-  .brand-block__title-wrapper {
-    padding-left: 32px;
-  }
 
   .brand-block {
     padding-bottom: 34px;
